@@ -48,7 +48,7 @@ Room* RoomN_Build()
 
 
 /* TODO REQUIRED: Build room 0 */
-Room* Room0_Build()
+Room* Room0_Build(0)
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -69,7 +69,7 @@ Room* Room0_Build()
 
 
 /* TODO REQUIRED: Build room 1 */
-Room* Room1_Build()
+Room* Room1_Build(1)
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -91,7 +91,7 @@ Room* Room1_Build()
 
 
 /* TODO REQUIRED: Build room 2 */
-Room* Room2_Build()
+Room* Room2_Build(2)
 {
 	/* TODO: Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -110,8 +110,243 @@ Room* Room2_Build()
 
 
 /* TODO ADVANCED: Build room 3 */
-/* TODO ADVANCED: Build room 4 */
+Room* RoomN_Build(3)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
 
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+/* TODO ADVANCED: Build room 4 */
+Room* RoomN_Build(5)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+Room* RoomN_Build(6)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+Room* RoomN_Build(7)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+Room* RoomN_Build(8)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+Room* RoomN_Build(9)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+Room* RoomN_Build(10)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* RoomN_Build(11)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* RoomN_Build(12)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* RoomN_Build(13)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+Room* RoomN_Build(14)
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
 
 /* ------------------------------------------------------- */
 /* Create the world data for a new game */
