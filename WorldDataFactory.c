@@ -228,11 +228,11 @@ Room* RoomN_Build(9)
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: elctrical could be a shocking place to be in \n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -250,11 +250,11 @@ Room* RoomN_Build(10)
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: the left engine equally important as the right engine what to do here.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 1);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -271,7 +271,7 @@ Room* RoomN_Build(11)
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: warp drive the place to warp my problems away by that i mean go to a far away galaxy\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -292,11 +292,11 @@ Room* RoomN_Build(12)
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: the right engine equally important as the left engine what to do here.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
