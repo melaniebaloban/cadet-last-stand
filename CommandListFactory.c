@@ -36,25 +36,25 @@ CommandList* CreateCommandList()
 
 	/* TODO REQUIRED: create the "quit" command
 	TODO BASIC: add a short alias "q" */
-
+	CommandList_Add(cmdListPtr, "q", HandleQuitCommand, true);
 	/* TODO REQUIRED: create the "drop" command
 	TODO BASIC: add a short alias "d" */
-
+	CommandList_Add(cmdListPtr, "d", HandleDropCommand, true);
 	/* TODO REQUIRED: create the "take" command
 	TODO BASIC: add a short alias "t" */
-
+	CommandList_Add(cmdListPtr, "t", HandleTakeCommand, true);
 	/* TODO REQUIRED: create the "use" command
 	TODO BASIC: add a short alias "u" */
-
+	CommandList_Add(cmdListPtr, "u", HandleUseCommand, true);
 	/* TODO REQUIRED: create the "look" command
 	TODO BASIC: add a short alias "l" */
-
+	CommandList_Add(cmdListPtr, "l", HandleLookCommand, true);
 	/* TODO REQUIRED: create the "inventory" command
 	TODO BASIC: add a short alias "i" */
-
+	CommandList_Add(cmdListPtr, "i", HandleInventoryCommand, true);
 	/* TODO REQUIRED: create the "go" command
 	TODO BASIC: add a short alias "g" */
-
+	CommandList_Add(cmdListPtr, "g", HandleGoCommand, true);
 	/* TODO ADVANCED: create aditional commands
 	this should require the creation of additional .c files to implement the command functions */
 

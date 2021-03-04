@@ -21,6 +21,7 @@ This could be used to create default states as well as loaded state.
 
 
 
+
 /******************************************************************************
 	Build room TEMPLATE
     Use this example function to build additional rooms
@@ -268,6 +269,8 @@ Room* RoomN_Build()///10
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
+	
+
 	/* Return the new room */
 	return room;
 }
@@ -288,6 +291,7 @@ Room* RoomN_Build()///11
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
 
 	/* Return the new room */
 	return room;
