@@ -80,7 +80,8 @@ Room* Room1_Build(1)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 8);
+	Room_AddRoomExit(room, "west", 6); /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -103,7 +104,7 @@ Room* Room2_Build(2)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 14);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -126,7 +127,7 @@ Room* RoomN_Build(3)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 14);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -149,7 +150,7 @@ Room* RoomN_Build(5)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 4);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -171,7 +172,8 @@ Room* RoomN_Build(6)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 7); 
+	Room_AddRoomExit(room, "east", 1);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -193,7 +195,7 @@ Room* RoomN_Build(7)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 6);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -215,7 +217,8 @@ Room* RoomN_Build(8)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 1);
+	Room_AddRoomExit(room, "east", 9);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -237,7 +240,7 @@ Room* RoomN_Build(9)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 8);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -259,7 +262,7 @@ Room* RoomN_Build(10)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -280,7 +283,7 @@ Room* RoomN_Build(11)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -301,7 +304,7 @@ Room* RoomN_Build(12)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -322,7 +325,10 @@ Room* RoomN_Build(13)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 1);
+	Room_AddRoomExit(room, "east", 12);
+	Room_AddRoomExit(room, "west", 10);
+	Room_AddRoomExit(room, "south", 11);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -343,7 +349,10 @@ Room* RoomN_Build(14)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 3);
+	Room_AddRoomExit(room, "east", 4);
+	Room_AddRoomExit(room, "south", 1);
+	Room_AddRoomExit(room, "west", 2);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
