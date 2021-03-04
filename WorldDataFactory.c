@@ -48,7 +48,7 @@ Room* RoomN_Build()
 
 
 /* TODO REQUIRED: Build room 0 */
-Room* Room0_Build(0)
+Room* Room0_Build()///0
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room = NULL;
@@ -69,48 +69,7 @@ Room* Room0_Build(0)
 
 
 /* TODO REQUIRED: Build room 1 */
-Room* Room1_Build(1)
-{
-	/* Pre-declare a room pointer which we will use to build the new room */
-	Room* room = NULL;
-
-	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
-	"This is room 1.  There is a large mirror here, and it shimmers as you approach.\n" */
-
-	/* TODO REQUIRED: Add an Exit "through the mirror" to Room 2 */
-	/* TODO BASIC: Add exit shortcuts for "through mirror" and "mirror" */
-
-	/* TODO REQUIRED: Add an Exit "south" back to Room 0 */
-	/* TODO BASIC: Add room exit shortcut for "s" */
-
-	/* TODO REQUIRED: Add a brick to the list of items in the room */
-
-	/* return the new room */
-	return room;
-}
-
-
-/* TODO REQUIRED: Build room 2 */
-Room* Room2_Build(2)
-{
-	/* TODO: Pre-declare a room pointer which we will use to build the new room */
-	Room* room = NULL;
-
-	/* TODO REQUIRED: Call Room_Create with the Room 2 description:
-	"This is room 2.  The room is isolated from the others, but you can see a crack in the east wall, just large enough to get through.\n" */
-
-	/* TODO REQUIRED: Add an Exit "east" to Room 0 */
-	/* TODO BASIC: Add exit shortcuts for "e" and "crack" */
-
-	/* TODO REQUIRED: Add a gold piece to the list of items in the room */
-
-	/* return the new room */
-	return room;
-}
-
-
-/* TODO ADVANCED: Build room 3 */
-Room* RoomN_Build(3)
+Room* Room1_Build()///1
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -121,7 +80,54 @@ Room* RoomN_Build(3)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 8);
+	Room_AddRoomExit(room, "west", 6); /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+/* TODO REQUIRED: Build room 2 */
+Room* Room2_Build()///2
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "east", 14);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+}
+
+
+/* TODO ADVANCED: Build room 3 */
+Room* RoomN_Build()///3
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
+
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "south", 14);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -133,7 +139,7 @@ Room* RoomN_Build(3)
 
 
 /* TODO ADVANCED: Build room 4 */
-Room* RoomN_Build(5)
+Room* RoomN_Build()///5
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -144,7 +150,7 @@ Room* RoomN_Build(5)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 4);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -155,7 +161,7 @@ Room* RoomN_Build(5)
 }
 
 
-Room* RoomN_Build(6)
+Room* RoomN_Build()///6
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -166,7 +172,8 @@ Room* RoomN_Build(6)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 7); 
+	Room_AddRoomExit(room, "east", 1);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -177,7 +184,7 @@ Room* RoomN_Build(6)
 }
 
 
-Room* RoomN_Build(7)
+Room* RoomN_Build()///7
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -188,7 +195,7 @@ Room* RoomN_Build(7)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 6);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -199,7 +206,7 @@ Room* RoomN_Build(7)
 }
 
 
-Room* RoomN_Build(8)
+Room* RoomN_Build()///8
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -210,7 +217,8 @@ Room* RoomN_Build(8)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 1);
+	Room_AddRoomExit(room, "east", 9);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -221,7 +229,7 @@ Room* RoomN_Build(8)
 }
 
 
-Room* RoomN_Build(9)
+Room* RoomN_Build()///9
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -232,7 +240,7 @@ Room* RoomN_Build(9)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 8);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -243,7 +251,7 @@ Room* RoomN_Build(9)
 }
 
 
-Room* RoomN_Build(10)
+Room* RoomN_Build()///10
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -254,7 +262,7 @@ Room* RoomN_Build(10)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -264,7 +272,7 @@ Room* RoomN_Build(10)
 	return room;
 }
 
-Room* RoomN_Build(11)
+Room* RoomN_Build()///11
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -275,7 +283,7 @@ Room* RoomN_Build(11)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -285,7 +293,7 @@ Room* RoomN_Build(11)
 	return room;
 }
 
-Room* RoomN_Build(12)
+Room* RoomN_Build()///12
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -296,7 +304,7 @@ Room* RoomN_Build(12)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "west", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 13);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -306,7 +314,7 @@ Room* RoomN_Build(12)
 	return room;
 }
 
-Room* RoomN_Build(13)
+Room* RoomN_Build()///13
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -317,7 +325,10 @@ Room* RoomN_Build(13)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 1);
+	Room_AddRoomExit(room, "east", 12);
+	Room_AddRoomExit(room, "west", 10);
+	Room_AddRoomExit(room, "south", 11);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
@@ -327,7 +338,7 @@ Room* RoomN_Build(13)
 	return room;
 }
 
-Room* RoomN_Build(14)
+Room* RoomN_Build()///14
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -338,7 +349,10 @@ Room* RoomN_Build(14)
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 3);
+	Room_AddRoomExit(room, "east", 4);
+	Room_AddRoomExit(room, "south", 1);
+	Room_AddRoomExit(room, "west", 2);/* 1 = the room index this exit connects to */
 
 	/* Items
 	   add items to the room */
