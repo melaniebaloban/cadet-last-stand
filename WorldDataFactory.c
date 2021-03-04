@@ -72,20 +72,21 @@ Room* Room0_Build(0)
 Room* Room1_Build(1)
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
-	Room* room = NULL;
+	Room* room;
 
-	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
-	"This is room 1.  There is a large mirror here, and it shimmers as you approach.\n" */
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
 
-	/* TODO REQUIRED: Add an Exit "through the mirror" to Room 2 */
-	/* TODO BASIC: Add exit shortcuts for "through mirror" and "mirror" */
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
 
-	/* TODO REQUIRED: Add an Exit "south" back to Room 0 */
-	/* TODO BASIC: Add room exit shortcut for "s" */
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
-	/* TODO REQUIRED: Add a brick to the list of items in the room */
-
-	/* return the new room */
+	/* Return the new room */
 	return room;
 }
 
@@ -93,18 +94,22 @@ Room* Room1_Build(1)
 /* TODO REQUIRED: Build room 2 */
 Room* Room2_Build(2)
 {
-	/* TODO: Pre-declare a room pointer which we will use to build the new room */
-	Room* room = NULL;
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
 
-	/* TODO REQUIRED: Call Room_Create with the Room 2 description:
-	"This is room 2.  The room is isolated from the others, but you can see a crack in the east wall, just large enough to get through.\n" */
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
 
-	/* TODO REQUIRED: Add an Exit "east" to Room 0 */
-	/* TODO BASIC: Add exit shortcuts for "e" and "crack" */
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
 
-	/* TODO REQUIRED: Add a gold piece to the list of items in the room */
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 
-	/* return the new room */
+	/* Return the new room */
 	return room;
 }
 
