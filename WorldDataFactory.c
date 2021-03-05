@@ -20,6 +20,8 @@ This could be used to create default states as well as loaded state.
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
 #include "LEngine.h"
 #include "REngine.h"
+#include "Warp.h"
+
 
 
 
@@ -287,7 +289,7 @@ Room* RoomN_Build()///11
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: warp drive the place to warp my problems away by that i mean go to a far away galaxy\n");
+	room = Room_Create("DEBUG: warp drive the place to warp my problems away by that i mean go to a far away galaxy I should check the Drive.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -296,6 +298,10 @@ Room* RoomN_Build()///11
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	ItemList_AddItem(Room_GetItemList(room), Warp_Build());
+
+
 
 
 	/* Return the new room */

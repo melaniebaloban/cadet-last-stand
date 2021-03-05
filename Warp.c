@@ -1,5 +1,5 @@
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
-#include "LEngine.h" /* Function declarations */
+#include "Warp.h" /* Function declarations */
 #include "GameState.h" /* struct GameState, GameState_ChangeScore */
 #include "GameFlags.h" /* GameFlags_IsInList */
 #include "WorldData.h" /* WorldData_GetRoom */
@@ -10,18 +10,18 @@
 
 #include <GameState.c>
 
-void LEngine_Use(CommandContext context, GameState* gameState, WorldData* worldData)
+void Warp_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	printf("You see a roll of flex tape then sealed the pipe with it, it held on tight Thank you Phill.");
+	printf("False alarm it was glowing red beucase of low batteries luckly oyu had spares laying around ");
 
 	GameFlags* GameFlags_Add(GameFlags * gameFlags, const char* flag);
 
 }
 
-Item* LEngine_Build()
+Item* Warp_Build()
 {
 	/* Create a "brick" item, using the functions defined in this file */
-	return Item_Create("Left Engine", "You see a leaking pipe.", false, LEngine_Use, NULL, NULL);
+	return Item_Create("Warp Drive", "Warp drive is glowing red?", false, Warp_Use, NULL, NULL);
 
-	
+
 }
