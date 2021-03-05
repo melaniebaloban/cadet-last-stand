@@ -18,6 +18,9 @@ This could be used to create default states as well as loaded state.
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
+#include "LEngine.h"
+#include "REngine.h"
+
 
 
 
@@ -259,7 +262,7 @@ Room* RoomN_Build()///10
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: the left engine equally important as the right engine what to do here.\n");
+	room = Room_Create("DEBUG: the left engine equally important as the right engine I should check the Engine.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -268,6 +271,8 @@ Room* RoomN_Build()///10
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	ItemList_AddItem(Room_GetItemList(room), LEngine_Build());
 
 	
 
@@ -304,7 +309,7 @@ Room* RoomN_Build()///12
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: the right engine equally important as the left engine what to do here.\n");
+	room = Room_Create("DEBUG: the right engine equally important as the left engine i should check the Engine.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -313,6 +318,10 @@ Room* RoomN_Build()///12
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	ItemList_AddItem(Room_GetItemList(room), REngine_Build());
+
+
 
 	/* Return the new room */
 	return room;
