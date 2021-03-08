@@ -14,7 +14,7 @@ void LEngine_Use(CommandContext context, GameState* gameState, WorldData* worldD
 {
 	printf("You see a roll of flex tape then sealed the pipe with it, it held on tight Thank you Phill.");
 
-	GameFlags* GameFlags_Add(GameFlags * gameFlags, const char* flag);
+	GameFlags_Add(gameState->gameFlags, "FixedPipe2");
 
 }
 

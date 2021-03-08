@@ -14,7 +14,7 @@ void Warp_Use(CommandContext context, GameState* gameState, WorldData* worldData
 {
 	printf("False alarm it was glowing red beucase of low batteries luckly oyu had spares laying around ");
 
-	GameFlags* GameFlags_Add(GameFlags * gameFlags, const char* flag);
+	GameFlags_Add(gameState->gameFlags, "FixedDrive");
 
 }
 

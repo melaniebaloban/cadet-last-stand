@@ -85,6 +85,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="LEngine.h" />
+    <ClInclude Include="Nav.h" />
     <ClInclude Include="REngine.h" />
     <ClInclude Include="Source\BrickFunctions.h" />
     <ClInclude Include="Source\CommandContext.h" />
@@ -123,6 +124,7 @@
     <ClCompile Include="CommandListFactory.c" />
     <ClCompile Include="LEngine.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="nav.c" />
     <ClCompile Include="REngine.c" />
     <ClCompile Include="Source\BrickFunctions.c" />
     <ClCompile Include="Source\CommandHandler.c" />
