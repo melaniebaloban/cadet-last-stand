@@ -1,5 +1,5 @@
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
-#include "REngine.h" /* Function declarations */
+#include "Nav.h" /* Function declarations */
 #include "GameState.h" /* struct GameState, GameState_ChangeScore */
 #include "GameFlags.h" /* GameFlags_IsInList */
 #include "WorldData.h" /* WorldData_GetRoom */
@@ -10,18 +10,25 @@
 
 #include <GameState.c>
 
-void REngine_Use(CommandContext context, GameState* gameState, WorldData* worldData)
+void Nav_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	printf("You see a roll of flex tape then sealed the pipe with it, it held on tight Thank you Phill.");
-
-	GameFlags_Add( gameState->gameFlags , "FixedPipe");
-
+	
+	if (GameFlags_IsInList(gameState->gameFlags, "  "))
+	{
+		
+		printf("Time to go home |You win|.\n");
+		return;
+	}
+	else
+	{
+		printf("did you finish the impotant stuff?");
+	}
 }
 
-Item* REngine_Build()
+Item* Nav_Build()
 {
 	/* Create a "brick" item, using the functions defined in this file */
-	return Item_Create("Right Engine", "You see a leaking pipe.", false, REngine_Use, NULL, NULL);
+	return Item_Create("Nav Check", "Did i finish everything?", false, Nav_Use, NULL, NULL);
 
 
 }
