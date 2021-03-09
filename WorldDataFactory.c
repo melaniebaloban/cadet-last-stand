@@ -22,7 +22,7 @@ This could be used to create default states as well as loaded state.
 #include "REngine.h"
 #include "Warp.h"
 #include "Nav.h"
-
+#include "BandAid.h"
 
 
 
@@ -164,6 +164,7 @@ Room* Room4_Build()///4
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Bandage_Build());
 
 	/* Return the new room */
 	return room;
