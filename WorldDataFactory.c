@@ -189,6 +189,7 @@ Room* Room5_Build()///4
 
 	/* Return the new room */
 	return room;
+}
 
 Room* Room6_Build()///6
 {
