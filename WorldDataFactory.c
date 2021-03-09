@@ -148,19 +148,19 @@ Room* RoomN_Build()///3
 
 
 /* TODO ADVANCED: Build room 4 */
-Room* RoomN_Build()///5
+Room* Room4_Build()///4
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("I should get a band-aid for the cut on arm! All this stress, I didn't even notice it.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "west", 4);  /* 1 = the room index this exit connects to */
-
+	Room_AddRoomExit(room, "west", 14);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 5);
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
