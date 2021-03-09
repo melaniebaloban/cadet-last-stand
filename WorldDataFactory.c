@@ -21,6 +21,7 @@ This could be used to create default states as well as loaded state.
 #include "LEngine.h"
 #include "REngine.h"
 #include "Warp.h"
+#include "Nav.h"
 
 
 
@@ -129,7 +130,7 @@ Room* RoomN_Build()///3
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: I sohuld comback here when I have finished everything on the ship.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -138,6 +139,8 @@ Room* RoomN_Build()///3
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	ItemList_AddItem(Room_GetItemList(room), Nav_Build());
 
 	/* Return the new room */
 	return room;
