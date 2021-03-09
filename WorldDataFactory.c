@@ -123,7 +123,7 @@ Room* Room2_Build()///2
 
 
 /* TODO ADVANCED: Build room 3 */
-Room* RoomN_Build()///3
+Room* Room3_Build()///3
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -155,7 +155,7 @@ Room* Room4_Build()///4
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("I should get a band-aid for the cut on arm! All this stress, I didn't even notice it.\n");
+	room = Room_Create("I should get a bandage for the cut on arm! All this stress, I didn't even notice it.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -170,8 +170,27 @@ Room* Room4_Build()///4
 	return room;
 }
 
+Room* Room5_Build()///4
+{
+	/* Pre-declare a room pointer which we will use to build the new room */
+	Room* room;
 
-Room* RoomN_Build()///6
+	/* Create the room
+	   include an initial room description */
+	room = Room_Create("Template");
+
+	/* Exits
+	   add one or more exits to allow navigation between rooms */
+	Room_AddRoomExit(room, "west", 4);  /* 1 = the room index this exit connects to */
+
+	/* Items
+	   add items to the room */
+	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+
+	/* Return the new room */
+	return room;
+
+Room* Room6_Build()///6
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -194,7 +213,7 @@ Room* RoomN_Build()///6
 }
 
 
-Room* RoomN_Build()///7
+Room* Room7_Build()///7
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -216,7 +235,7 @@ Room* RoomN_Build()///7
 }
 
 
-Room* RoomN_Build()///8
+Room* Room8_Build()///8
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -239,7 +258,7 @@ Room* RoomN_Build()///8
 }
 
 
-Room* RoomN_Build()///9
+Room* Room9_Build()///9
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -261,7 +280,7 @@ Room* RoomN_Build()///9
 }
 
 
-Room* RoomN_Build()///10
+Room* Room10_Build()///10
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -286,7 +305,7 @@ Room* RoomN_Build()///10
 	return room;
 }
 
-Room* RoomN_Build()///11
+Room* Room11_Build()///11
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -312,7 +331,7 @@ Room* RoomN_Build()///11
 	return room;
 }
 
-Room* RoomN_Build()///12
+Room* Room12_Build()///12
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -337,7 +356,7 @@ Room* RoomN_Build()///12
 	return room;
 }
 
-Room* RoomN_Build()///13
+Room* Room13_Build()///13
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -361,7 +380,7 @@ Room* RoomN_Build()///13
 	return room;
 }
 
-Room* RoomN_Build()///14
+Room* Room14_Build()///14
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
