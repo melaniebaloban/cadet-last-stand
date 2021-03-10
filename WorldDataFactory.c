@@ -407,20 +407,20 @@ WorldData* CreateInitialWorldData()
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
-	WorldData_SetRoom(worldData, 1, Room0_Build());
-	WorldData_SetRoom(worldData, 2, Room0_Build());
-	WorldData_SetRoom(worldData, 3, Room0_Build());
-	WorldData_SetRoom(worldData, 4, Room0_Build());
-	WorldData_SetRoom(worldData, 5, Room0_Build());
-	WorldData_SetRoom(worldData, 6, Room0_Build());
-	WorldData_SetRoom(worldData, 7, Room0_Build());
-	WorldData_SetRoom(worldData, 8, Room0_Build());
-	WorldData_SetRoom(worldData, 9, Room0_Build());
-	WorldData_SetRoom(worldData, 10, Room0_Build());
-	WorldData_SetRoom(worldData, 11, Room0_Build());
-	WorldData_SetRoom(worldData, 12, Room0_Build());
-	WorldData_SetRoom(worldData, 13, Room0_Build());
-	WorldData_SetRoom(worldData, 14, Room0_Build());
+	WorldData_SetRoom(worldData, 1, Room1_Build());
+	WorldData_SetRoom(worldData, 2, Room2_Build());
+	WorldData_SetRoom(worldData, 3, Room3_Build());
+	WorldData_SetRoom(worldData, 4, Room4_Build());
+	WorldData_SetRoom(worldData, 5, Room5_Build());
+	WorldData_SetRoom(worldData, 6, Room6_Build());
+	WorldData_SetRoom(worldData, 7, Room7_Build());
+	WorldData_SetRoom(worldData, 8, Room8_Build());
+	WorldData_SetRoom(worldData, 9, Room9_Build());
+	WorldData_SetRoom(worldData, 10, Room10_Build());
+	WorldData_SetRoom(worldData, 11, Room11_Build());
+	WorldData_SetRoom(worldData, 12, Room12_Build());
+	WorldData_SetRoom(worldData, 13, Room13_Build());
+	WorldData_SetRoom(worldData, 14, Room14_Build());
 	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
 
 	/* TODO ADVANCED: add additional advanced rooms */

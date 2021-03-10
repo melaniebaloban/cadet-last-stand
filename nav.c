@@ -13,7 +13,8 @@
 
 void Nav_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	
+	UNREFERENCED_PARAMETER(context);
+	UNREFERENCED_PARAMETER(worldData);
 	if (GameFlags_IsInList(gameState->gameFlags, "FixedPipe") && GameFlags_IsInList(gameState->gameFlags, "FixedPipe2") && GameFlags_IsInList(gameState->gameFlags, "FixedDrive"))
 	{
 		

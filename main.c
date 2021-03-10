@@ -18,6 +18,9 @@ This file implements the main function and game loop.
 #include "GameState.h" /* struct GameState */
 #include "WorldDataFactory.h" /* CreateTestWorldData */
 #include "WorldData.h" /* WorldData_PrintIntroduction, WorldData_Free */
+#include <stdio.h>
+#include <time.h>
+
 
 
 /* The main program loop */
@@ -30,6 +33,7 @@ int main()
 	WorldData* worldData; /* The world data */
 	CommandList* commandList; /* The set of supported commands */
 	CommandData command; /* The command entered by the user */
+	time_t seconds;
 
 	/* create the initial game objects */
 	gameState = CreateInitialGameState();
@@ -39,6 +43,9 @@ int main()
 	/* initialize the command CommandData values */
 	command.commandList = commandList;
 	command.context = CommandContext_User;
+
+
+	seconds = time(NULL);
 
 	/* print the world introduction*/
 	WorldData_PrintIntroduction(worldData, gameState->currentRoomIndex);
@@ -51,6 +58,16 @@ int main()
 	/* while the game is running, accept input and handle commands */
 	while (gameState->isRunning)
 	{
+		printf("min till ship explodes = %ld\n", (long)(30 - ((time(NULL) - seconds) / 60)));
+
+		if (time(NULL) - seconds <= 0)
+		{
+			printf(" Ship Exploded! |You Lose|");
+
+			break;
+		}
+
+
 		/* print command prompt */
 		printf("\nWhat is your command?\n>> ");
 

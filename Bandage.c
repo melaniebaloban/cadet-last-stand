@@ -12,6 +12,10 @@
 
 void Bandage_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
+	UNREFERENCED_PARAMETER(context);
+	UNREFERENCED_PARAMETER(gameState);
+	UNREFERENCED_PARAMETER(worldData);
+
 	printf("Now you feel a lot better and can continue your mission to fix the ship!\n");
 
 }

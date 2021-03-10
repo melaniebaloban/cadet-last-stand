@@ -12,6 +12,9 @@
 
 void Warp_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
+	UNREFERENCED_PARAMETER(context);
+	UNREFERENCED_PARAMETER(worldData);
+
 	printf("False alarm it was glowing red beucase of low batteries luckly oyu had spares laying around ");
 
 	GameFlags_Add(gameState->gameFlags, "FixedDrive");
