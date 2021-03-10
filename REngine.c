@@ -6,6 +6,7 @@
 #include "Room.h" /* Room_GetItemList, Room_SetDescription */
 #include "ItemList.h" /* ItemList_FindItem, ItemList_Remove, ItemList_Add */
 #include "Item.h" /* Item_Create */
+///All content © 20xx DigiPen (USA) Corporation, all rights reserved.
 
 
 #include <GameState.c>

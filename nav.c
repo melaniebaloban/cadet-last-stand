@@ -6,6 +6,7 @@
 #include "Room.h" /* Room_GetItemList, Room_SetDescription */
 #include "ItemList.h" /* ItemList_FindItem, ItemList_Remove, ItemList_Add */
 #include "Item.h" /* Item_Create */
+///All content © 20xx DigiPen (USA) Corporation, all rights reserved.
 
 
 #include <GameState.c>
@@ -16,7 +17,7 @@ void Nav_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 	if (GameFlags_IsInList(gameState->gameFlags, "FixedPipe") && GameFlags_IsInList(gameState->gameFlags, "FixedPipe2") && GameFlags_IsInList(gameState->gameFlags, "FixedDrive"))
 	{
 		
-		printf("Time to go home |You win|.\n");
+		printf("Time to go home |You win|. All content © 20xx DigiPen (USA) Corporation, all rights reserved. \n");
 		return;
 	}
 	else

@@ -54,25 +54,7 @@ Room* RoomN_Build()
 }
 
 
-/* TODO REQUIRED: Build room 0 */
-Room* Room0_Build()///0
-{
-	/* Pre-declare a room pointer which we will use to build the new room */
-	Room* room = NULL;
 
-	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
-	"This is room 0. It is a display room with a cage in the middle. You can see a jeweled egg inside the cage.  There is a crack in the west wall, but you can't fit through it from this side.\n" */
-
-	/* TODO REQUIRED: Add an Exit "north" to Room 1 */
-	/* TODO BASIC: Add room exit shortcut for "n" */
-
-	/* TODO REQUIRED: add an exit door to the list of items in the room, ExitDoor_Build() */
-
-	/* TODO ADVANCED: (not required) update the description and add a room exit to the "east" */
-
-	/* return the new room */
-	return room;
-}
 
 
 /* TODO REQUIRED: Build room 1 */
@@ -368,7 +350,7 @@ Room* Room13_Build()///13
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: Hall way 4 places to go\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -392,7 +374,7 @@ Room* Room14_Build()///14
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: Hallway 4 places to go  \n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -419,13 +401,26 @@ WorldData* CreateInitialWorldData()
 
 	/* TODO REQUIRED: update room count to match the number of rooms you have created and added to the world
 	   if this number doesn't match then your game will either crash or you will end up stuck in a broken room with no exits */
-	int roomCount = 1;
+	int roomCount = 14;
 
 	/* create the new WorldData object with 3 rooms */
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
-	WorldData_SetRoom(worldData, 0, Room0_Build());
+	WorldData_SetRoom(worldData, 1, Room0_Build());
+	WorldData_SetRoom(worldData, 2, Room0_Build());
+	WorldData_SetRoom(worldData, 3, Room0_Build());
+	WorldData_SetRoom(worldData, 4, Room0_Build());
+	WorldData_SetRoom(worldData, 5, Room0_Build());
+	WorldData_SetRoom(worldData, 6, Room0_Build());
+	WorldData_SetRoom(worldData, 7, Room0_Build());
+	WorldData_SetRoom(worldData, 8, Room0_Build());
+	WorldData_SetRoom(worldData, 9, Room0_Build());
+	WorldData_SetRoom(worldData, 10, Room0_Build());
+	WorldData_SetRoom(worldData, 11, Room0_Build());
+	WorldData_SetRoom(worldData, 12, Room0_Build());
+	WorldData_SetRoom(worldData, 13, Room0_Build());
+	WorldData_SetRoom(worldData, 14, Room0_Build());
 	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
 
 	/* TODO ADVANCED: add additional advanced rooms */
