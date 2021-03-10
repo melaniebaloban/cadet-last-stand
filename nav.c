@@ -13,7 +13,7 @@
 void Nav_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	
-	if (GameFlags_IsInList(gameState->gameFlags, "  "))
+	if (GameFlags_IsInList(gameState->gameFlags, "FixedPipe") && GameFlags_IsInList(gameState->gameFlags, "FixedPipe2") && GameFlags_IsInList(gameState->gameFlags, "FixedDrive"))
 	{
 		
 		printf("Time to go home |You win|.\n");
