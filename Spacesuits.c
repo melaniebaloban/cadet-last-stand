@@ -1,5 +1,5 @@
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
-#include "Bandage.h" /* Function declarations */
+#include "Spacesuits.h" /* Function declarations */
 #include "GameState.h" /* struct GameState, GameState_ChangeScore */
 #include "GameFlags.h" /* GameFlags_IsInList */
 #include "WorldData.h" /* WorldData_GetRoom */
@@ -10,16 +10,16 @@
 
 #include <GameState.c>
 
-void Bandage_Use(CommandContext context, GameState* gameState, WorldData* worldData)
+void Spacesuits_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	printf("Now you feel a lot better and can continue your mission to fix the ship!\n");
+	printf("It seems like they are good to go! I should hurry!\n");
 
 }
 
-Item* Bandage_Build()
+Item* Spacesuits_Build()
 {
 	/* Create a "brick" item, using the functions defined in this file */
-	return Item_Create("Bandage", "A bandage to help your wound!", false, Bandage_Use, NULL, NULL);
+	return Item_Create("Spacesuits", "These spacesuits need to be ready for emergency use!", false, Spacesuits_Use, NULL, NULL);
 
 
 }

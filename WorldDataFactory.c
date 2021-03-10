@@ -23,9 +23,9 @@ This could be used to create default states as well as loaded state.
 #include "Warp.h"
 #include "Nav.h"
 #include "Bandage.h"
-
-
-
+#include "Toolbox.h"
+#include "CrewMember.h"
+#include "Spacesuits.h"
 
 
 /******************************************************************************
@@ -177,7 +177,7 @@ Room* Room5_Build()///4
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("Template");
+	room = Room_Create("I should grab the toolbox from the Storage Room so I can fix whatever is broken right away.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -186,6 +186,8 @@ Room* Room5_Build()///4
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Toolbox_Build());
+
 
 	/* Return the new room */
 	return room;
@@ -198,7 +200,7 @@ Room* Room6_Build()///6
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("Let's check the Crew Quarters!\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -208,6 +210,7 @@ Room* Room6_Build()///6
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), CrewMember_Build());
 
 	/* Return the new room */
 	return room;
@@ -221,7 +224,7 @@ Room* Room7_Build()///7
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("I should make sure the spacesuits in the Airlock are ready for emergency use! \n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -230,6 +233,7 @@ Room* Room7_Build()///7
 	/* Items
 	   add items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Spacesuits_Build());
 
 	/* Return the new room */
 	return room;
