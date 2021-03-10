@@ -85,6 +85,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bandage.h" />
+    <ClInclude Include="CrewMember.h" />
     <ClInclude Include="LEngine.h" />
     <ClInclude Include="Nav.h" />
     <ClInclude Include="REngine.h" />
@@ -119,11 +120,14 @@
     <ClInclude Include="Source\UseCommandHandler.h" />
     <ClInclude Include="Source\WorldData.h" />
     <ClInclude Include="Source\WorldDataFactory.h" />
+    <ClInclude Include="Spacesuits.h" />
+    <ClInclude Include="Toolbox.h" />
     <ClInclude Include="Warp.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bandage.c" />
     <ClCompile Include="CommandListFactory.c" />
+    <ClCompile Include="CrewMember.c" />
     <ClCompile Include="LEngine.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="nav.c" />
@@ -152,6 +156,8 @@
     <ClCompile Include="Source\TakeCommandHandler.c" />
     <ClCompile Include="Source\UseCommandHandler.c" />
     <ClCompile Include="Source\WorldData.c" />
+    <ClCompile Include="Spacesuits.c" />
+    <ClCompile Include="Toolbox.c" />
     <ClCompile Include="Warp.c" />
     <ClCompile Include="WorldDataFactory.c" />
   </ItemGroup>

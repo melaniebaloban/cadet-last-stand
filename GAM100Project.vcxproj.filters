@@ -91,6 +91,15 @@
     <ClCompile Include="nav.c">
       <Filter>World Data\Item Functions</Filter>
     </ClCompile>
+    <ClCompile Include="Toolbox.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="CrewMember.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Spacesuits.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CommandContext.h">
@@ -199,6 +208,15 @@
       <Filter>World Data\Item Functions</Filter>
     </ClInclude>
     <ClInclude Include="Nav.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Toolbox.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="CrewMember.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Spacesuits.h">
       <Filter>World Data\Item Functions</Filter>
     </ClInclude>
   </ItemGroup>
