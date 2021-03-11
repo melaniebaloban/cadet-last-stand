@@ -60,7 +60,7 @@ int main()
 	{
 		printf("min till ship explodes = %ld\n", (long)(30 - ((time(NULL) - seconds) / 60)));
 
-		if (time(NULL) - seconds <= 0)
+		if (time(NULL) - seconds > 1800)
 		{
 			printf(" Ship Exploded! |You Lose|");
 

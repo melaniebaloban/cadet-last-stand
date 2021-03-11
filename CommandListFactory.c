@@ -54,7 +54,7 @@ CommandList* CreateCommandList()
 	CommandList_Add(cmdListPtr, "i", HandleInventoryCommand, true);
 	/* TODO REQUIRED: create the "go" command
 	TODO BASIC: add a short alias "g" */
-	CommandList_Add(cmdListPtr, "g", HandleGoCommand, true);
+	CommandList_Add(cmdListPtr, "go", HandleGoCommand, true);
 	/* TODO ADVANCED: create aditional commands
 	this should require the creation of additional .c files to implement the command functions */
 

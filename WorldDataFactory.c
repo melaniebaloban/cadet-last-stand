@@ -58,7 +58,7 @@ Room* RoomN_Build()
 
 
 /* TODO REQUIRED: Build room 1 */
-Room* Room1_Build()///1
+Room* Room0_Build()///1
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -82,7 +82,7 @@ Room* Room1_Build()///1
 
 
 /* TODO REQUIRED: Build room 2 */
-Room* Room2_Build()///2
+Room* Room1_Build()///2
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -105,7 +105,7 @@ Room* Room2_Build()///2
 
 
 /* TODO ADVANCED: Build room 3 */
-Room* Room3_Build()///3
+Room* Room2_Build()///3
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -130,7 +130,7 @@ Room* Room3_Build()///3
 
 
 /* TODO ADVANCED: Build room 4 */
-Room* Room4_Build()///4
+Room* Room3_Build()///4
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -152,7 +152,7 @@ Room* Room4_Build()///4
 	return room;
 }
 
-Room* Room5_Build()///4
+Room* Room4_Build()///4
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -175,7 +175,7 @@ Room* Room5_Build()///4
 	return room;
 }
 
-Room* Room6_Build()///6
+Room* Room5_Build()///6
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -199,7 +199,7 @@ Room* Room6_Build()///6
 }
 
 
-Room* Room7_Build()///7
+Room* Room6_Build()///7
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -222,7 +222,7 @@ Room* Room7_Build()///7
 }
 
 
-Room* Room8_Build()///8
+Room* Room7_Build()///8
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -245,7 +245,7 @@ Room* Room8_Build()///8
 }
 
 
-Room* Room9_Build()///9
+Room* Room8_Build()///9
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -267,7 +267,7 @@ Room* Room9_Build()///9
 }
 
 
-Room* Room10_Build()///10
+Room* Room9_Build()///10
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -292,7 +292,7 @@ Room* Room10_Build()///10
 	return room;
 }
 
-Room* Room11_Build()///11
+Room* Room10_Build()///11
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -318,7 +318,7 @@ Room* Room11_Build()///11
 	return room;
 }
 
-Room* Room12_Build()///12
+Room* Room11_Build()///12
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -343,7 +343,7 @@ Room* Room12_Build()///12
 	return room;
 }
 
-Room* Room13_Build()///13
+Room* Room12_Build()///13
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -367,7 +367,7 @@ Room* Room13_Build()///13
 	return room;
 }
 
-Room* Room14_Build()///14
+Room* Room13_Build()///14
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -407,6 +407,7 @@ WorldData* CreateInitialWorldData()
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
+	WorldData_SetRoom(worldData, 0, Room0_Build()); 
 	WorldData_SetRoom(worldData, 1, Room1_Build());
 	WorldData_SetRoom(worldData, 2, Room2_Build());
 	WorldData_SetRoom(worldData, 3, Room3_Build());
@@ -420,7 +421,7 @@ WorldData* CreateInitialWorldData()
 	WorldData_SetRoom(worldData, 11, Room11_Build());
 	WorldData_SetRoom(worldData, 12, Room12_Build());
 	WorldData_SetRoom(worldData, 13, Room13_Build());
-	WorldData_SetRoom(worldData, 14, Room14_Build());
+	
 	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
 
 	/* TODO ADVANCED: add additional advanced rooms */
