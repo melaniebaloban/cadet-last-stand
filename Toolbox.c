@@ -13,7 +13,7 @@
 void Toolbox_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
-	
+	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 	printf("Now I am even more prepared to fix whatever is wrong with this ship!\n");
 

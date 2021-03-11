@@ -8,7 +8,7 @@
 #include "Item.h" /* Item_Create */
 ///All content © 20xx DigiPen (USA) Corporation, all rights reserved.
 
-#include <GameState.c>
+
 
 void Warp_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {

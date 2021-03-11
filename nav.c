@@ -9,7 +9,7 @@
 ///All content © 20xx DigiPen (USA) Corporation, all rights reserved.
 
 
-#include <GameState.c>
+
 
 void Nav_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {

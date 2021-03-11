@@ -8,7 +8,7 @@
 #include "Item.h" /* Item_Create */
 
 
-#include <GameState.c>
+
 
 void CrewMember_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {

@@ -13,7 +13,7 @@
 void Spacesuits_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
-	
+	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 	printf("It seems like they are good to go! I should hurry!\n");
 
