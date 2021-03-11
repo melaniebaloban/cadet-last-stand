@@ -57,15 +57,15 @@ Room* RoomN_Build()
 
 
 
-/* TODO REQUIRED: Build room 1 */
-Room* Room0_Build()///1
+/* TODO REQUIRED: Build room  */
+Room* Room0_Build()///0
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: This is a template - Include a description for the room here\n");
+	room = Room_Create("DEBUG: You are in the main hall Good Luck.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -82,7 +82,7 @@ Room* Room0_Build()///1
 
 
 /* TODO REQUIRED: Build room 2 */
-Room* Room1_Build()///2
+Room* Room1_Build()///1
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -105,7 +105,7 @@ Room* Room1_Build()///2
 
 
 /* TODO ADVANCED: Build room 3 */
-Room* Room2_Build()///3
+Room* Room2_Build()///2
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -130,7 +130,7 @@ Room* Room2_Build()///3
 
 
 /* TODO ADVANCED: Build room 4 */
-Room* Room3_Build()///4
+Room* Room3_Build()///3
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -175,7 +175,7 @@ Room* Room4_Build()///4
 	return room;
 }
 
-Room* Room5_Build()///6
+Room* Room5_Build()///5
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -199,7 +199,7 @@ Room* Room5_Build()///6
 }
 
 
-Room* Room6_Build()///7
+Room* Room6_Build()///6
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -222,7 +222,7 @@ Room* Room6_Build()///7
 }
 
 
-Room* Room7_Build()///8
+Room* Room7_Build()///7
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
@@ -245,14 +245,14 @@ Room* Room7_Build()///8
 }
 
 
-Room* Room8_Build()///9
+Room* Room8_Build()///8
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: elctrical could be a shocking place to be in \n");
+	room = Room_Create("elctrical could be a shocking place to be in \n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -267,14 +267,14 @@ Room* Room8_Build()///9
 }
 
 
-Room* Room9_Build()///10
+Room* Room9_Build()///9
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: the left engine equally important as the right engine I should check the Engine.\n");
+	room = Room_Create("The left engine equally important as the right engine I should check the Engine.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -292,14 +292,14 @@ Room* Room9_Build()///10
 	return room;
 }
 
-Room* Room10_Build()///11
+Room* Room10_Build()///10
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: warp drive the place to warp my problems away by that i mean go to a far away galaxy I should check the Drive.\n");
+	room = Room_Create("Warp drive the place to warp my problems away by that i mean go to a far away galaxy I should check the Drive.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -318,14 +318,14 @@ Room* Room10_Build()///11
 	return room;
 }
 
-Room* Room11_Build()///12
+Room* Room11_Build()///11
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: the right engine equally important as the left engine i should check the Engine.\n");
+	room = Room_Create("The right engine equally important as the left engine i should check the Engine.\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -343,14 +343,14 @@ Room* Room11_Build()///12
 	return room;
 }
 
-Room* Room12_Build()///13
+Room* Room12_Build()///12
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: Hall way 4 places to go\n");
+	room = Room_Create("Hall way 4 places to go\n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -367,14 +367,14 @@ Room* Room12_Build()///13
 	return room;
 }
 
-Room* Room13_Build()///14
+Room* Room13_Build()///13
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
 	Room* room;
 
 	/* Create the room
 	   include an initial room description */
-	room = Room_Create("DEBUG: Hallway 4 places to go  \n");
+	room = Room_Create("Hallway 4 places to go  \n");
 
 	/* Exits
 	   add one or more exits to allow navigation between rooms */
@@ -404,7 +404,7 @@ WorldData* CreateInitialWorldData()
 	int roomCount = 14;
 
 	/* create the new WorldData object with 3 rooms */
-	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
+	worldData = WorldData_Create("Welcome to Cadets Last Stand commands: go|direction|:move. use|item name|:to interact any item. q:to quit the game.\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
 	WorldData_SetRoom(worldData, 0, Room0_Build()); 
